@@ -10,7 +10,7 @@ This project demonstrates the core ETL (Extract, Transform, Load) process common
 
 # ETL Workflow
 
-## 1. Extract
+## 1. Extract ([extract.py](https://github.com/Damaa-C/news_etl_pipeline/blob/main/extract.py))
 The pipeline extracts top news headlines from the NewsAPI using HTTP requests.
 
 ### API Endpoint
@@ -24,7 +24,7 @@ https://newsapi.org/v2/top-headlines?country=us&apiKey=API_KEY
 
 ---
 
-## 2. Transform
+## 2. Transform ([transform.py](https://github.com/Damaa-C/news_etl_pipeline/blob/main/transform.py))
 The extracted JSON data is cleaned and transformed into a Pandas DataFrame.
 
 ### Transformed Fields
@@ -41,7 +41,7 @@ The extracted JSON data is cleaned and transformed into a Pandas DataFrame.
 
 ---
 
-## 3. Load
+## 3. Load ([load.py](https://github.com/Damaa-C/news_etl_pipeline/blob/main/load.py))
 The transformed data is loaded into a PostgreSQL database using SQLAlchemy.
 
 ### Database
@@ -136,7 +136,7 @@ data_env\Scripts\activate
 
 ---
 
-## 3. Install Dependencies
+## 3. Install Dependencies 
 
 ```bash
 pip install -r requirements.txt
