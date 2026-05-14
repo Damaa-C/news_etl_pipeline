@@ -1,0 +1,6 @@
+requests
+load_dotenv
+os
+pandas
+sqlalchemy
+psycopg2
